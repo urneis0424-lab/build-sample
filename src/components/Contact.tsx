@@ -17,15 +17,15 @@ export default function Contact() {
   }, []);
 
   return (
-    <section id="contact" ref={ref} className="relative bg-gray-900 py-20 md:py-32 overflow-hidden">
-      {/* 背景画像: object-contain でデバイス幅に合わせて全体表示 */}
-      <div className="absolute inset-0 flex items-center justify-center">
+    <section id="contact" ref={ref} className="py-24 md:py-32 relative overflow-hidden">
+      {/* Background image */}
+      <div className="absolute inset-0">
         <img
           src="/images/contact-bg.png"
           alt=""
-          className="w-full h-full object-contain opacity-80"
+          className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-black/50" />
       </div>
 
       {/* コンテンツ */}
